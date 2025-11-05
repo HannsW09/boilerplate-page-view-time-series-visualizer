@@ -61,7 +61,7 @@ def draw_box_plot():
     axes[0].set_xlabel('Years')
     axes[0].set_ylabel('Average Page Views')
 
-    sns.boxplot(x='value', y='month', data=df_box, ax=axes[1])
+    sns.boxplot(x='month', y='value', data=df_box, ax=axes[1])
     axes[1].set_title('Month-wise Box Plot (Seasonality)')
     axes[1].set_xlabel('Months')
     axes[1].set_ylabel('Average Page Views')
